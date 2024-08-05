@@ -1,0 +1,30 @@
+{
+  "name": "jsk-react",
+  "version": "1.0.0",
+  "description": "This is jsk react by Abhik",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhik-Jawandhiya/jsk-reack.git"
+  },
+  "keywords": [],
+  "author": "Abhik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhik-Jawandhiya/jsk-reack/issues"
+  },
+  "homepage": "https://github.com/Abhik-Jawandhiya/jsk-reack#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": ["last 2 versions"]
+}
