@@ -2,41 +2,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-/**
- * 
- * <div id="parent">
- *  <div id="child">
- *      <h1>I am h1 tag</h1>
- *      <h2>I am h2 tag</h2
- *  </div>
- * <div id="child2">
- *      <h1>I am h1 tag</h1>
- *      <h2>I am h2 tag</h2
- *  </div>
- * </div>
- * 
- */
+//React.createElement => ReactEleemnt - JS Object => HTMLElement(render)
+const heading = React.createElement("h1", {id: "heading"}, "JSK React");
 
-//JSX
+console.log(heading);
 
-const parent = React.createElement(
-    'div', 
-    {id: "parent"},
-    [React.createElement(
-        'div', 
-        {id: "child"},
-        [React.createElement('h1', {},'I am h1 tag' ), React.createElement('h2', {},'I am h2 tag' )]
-    ),
-    React.createElement(
-        'div', 
-        {id: "child2"},
-        [React.createElement('h1', {},'I am h1 tag' ), React.createElement('h2', {},'I am h2 tag' )]
-    )]
+//JSX - Not HTML in javascript (It is HTML like syntax)
+//JSX code is transpiled before it reaches the JS engine - This is done by PARCEL with the help of BABEL(JavaScript Compiler/ Transpiler)
+//JSX Code -> transpiled to createElement React.createElement => ReactEleemnt - JS Object => HTMLElement(render)
+//Various arributes of JSX - img tag
+//JSX - HTML Attributes are given as camel case ()
+
+const jsxHeading = (
+    <h1 id="heading" className="heading">
+        JSK React using JSX
+    </h1>
 );
+console.log(jsxHeading);
 
-console.log(parent);
+
+//React Component
 
 
-//const heading = React.createElement("h1", {id: "heading", xyz: "abc"}, "Hello from React JS!!!");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(jsxHeading);
